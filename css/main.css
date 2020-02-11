@@ -1,0 +1,337 @@
+p
+{
+	line-height: 100px;
+	background: #ffffff00;
+	text-align: center;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+}
+
+/*basic reset*/
+/*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
+
+div,p,body,header,footer,section,article,nav 
+{ 
+	margin: 4px; 
+	padding: 0px; 
+}	
+
+img
+{ 
+	border: none; /*Remove border if image is a link*/
+	margin: 0; 
+	padding: 0; 
+}
+
+/*html selectors*/
+
+body 
+{
+	background-image: url(../images/bubbles.png); 
+	background-size: cover;
+	font-family: 'Special Elite', cursive,"Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: center;
+	font-size: 15px;
+	color: black;
+
+}
+
+
+/*a:link is for not visited(standard unclicked link), 
+a:visited is for visited, and just a applies to both.*/
+/*a will also style anchor links*/
+
+a:link, a:visited 
+{ 
+ 	text-decoration:none; 	
+}
+
+a:hover, a:active 
+{ 
+	text-decoration:none; 
+}
+
+p{
+	color: white;
+	text-align: center;
+	margin:0 auto;
+}
+
+.hidden{
+	display: none;
+}
+
+p{
+	color: black;
+	text-align: center;
+	margin:0 auto;
+}
+
+#mainHeader
+{
+	margin-top: 40px;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+	border-bottom: solid 1px #DDD;
+}
+
+.siteContainer{
+	margin:0 auto;
+	width: 60%;
+	min-width: 957px;
+	line-height:10px;
+	background-color: white;
+}
+
+#AllProd{
+	margin:0 auto;
+	width: 60%;
+	min-width: 957px;
+	line-height:10px;
+	
+}
+
+
+.box{
+	background-color: transparent;
+	width:200px;
+	height: 300px;
+}
+
+.tbox{
+	background-color: transparent;
+	flex-direction: wrap;
+
+}
+
+#FirstRow{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-top: 100px;
+
+}
+
+#SecondRow{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-top: 100px;
+	margin-bottom: 100px;
+
+}
+
+#logo{
+	width:100px;
+	height:50px;
+
+
+}
+
+#
+
+#mainNav 
+{
+	margin:0 auto;
+	width: 500px;
+	font-size: 20px;
+}
+
+.logoNav{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+
+}
+
+p{
+	
+   line-height:1;
+
+}
+
+.originBImage{
+	min-width: 957px;
+	height: 400px;
+	background-color: transparent;
+	margin-top: 90px;
+	flex-direction: row;
+	justify-content: space-inbetween;
+}
+
+.flex-box-one {
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+#box1{
+	margin: 0 auto;
+
+}
+p{
+	margin:20px 50px 50px;
+	text-align: center;
+}
+.flex-box-two {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 100px;
+}
+
+#box1{
+	margin: 0 auto;
+
+}
+
+#media{
+	min-width: 957px;
+	height: 200px;
+	
+	margin-top: 100px;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+#bigImg{
+	width:600px;
+	height: 400px;
+	background-color: black;
+	margin-top: 100px;
+	
+}
+
+/*.animation{
+	display: inline-block;
+	width: 500px;
+	height: 500px;
+	background: transparent url("../images/1.svg") no-repeat 0 0;
+	left:34px;
+	top:254px;
+	animation-name: disapare;
+
+}
+
+
+
+.animation: hover {
+	display: inline-block;
+	width: 500px;
+	height: 500px;
+	background: transparent url("../images/2.svg") no-repeat 0 0;
+	left:34px;
+	top:254px;
+}*/
+
+ @-webkit-keyframes disapare {
+  0%   { display: absolute; }
+  100% { display: none; }
+
+}
+
+@-moz-keyframes disapare {
+ 0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+
+
+
+#bigImgText{
+	width:300px;
+	height: 400px;
+	margin-top: 100px;
+}
+
+#promo{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+
+#mainFooter 
+{
+	margin:0 auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	display: flex;
+	
+  	
+  	font-size: 20px;
+}
+
+#mainFooterProd
+{
+	margin:0 auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+  	font-size: 20px;
+}
+
+#footerNav 
+{
+	width: 500px;
+}
+
+.socialMedia {
+  height: 45px;
+  margin-left: auto;
+  margin-top: 28px;
+  margin-right: 10px;
+}
+
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: center;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+.slide {
+	max-width:500px;
+}
+
+.mySlides {
+	width:100%
+	display:none;
+}
+
